@@ -1,1 +1,329 @@
 /* место для вашего кода */
+
+.page {
+  width: 1440px;
+  margin: auto;
+  background: #fff;
+}
+/*стили для шапки*/
+header {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 92px 50px 92px 50px;
+}
+.header-menu {
+  display: flex;
+}
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  padding-top: 43px;
+  padding-bottom: 45px;
+  white-space: nowrap;
+  gap: 32px;
+}
+.header__links-list-item { 
+  list-style: circle;
+}
+.header__links-list-item a{
+  text-decoration: underline;
+}
+
+.header__links-list-item_no-bullit {
+  text-decoration: none;
+  list-style: none;
+}
+.header_logo {
+  justify-self: center;
+  width: 148px;
+  height: 105px;
+}
+header img {
+  height: 105px;
+  width: 148px;
+  padding-bottom: 2px;
+}
+header address {
+  justify-self: end;
+}
+.header_address {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  list-style: none;
+  line-height: 24px;
+  margin-top: 5px;
+}
+.header_address_tel {
+  text-underline-position: under;
+}
+
+/*стили для вхрдной секции*/
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+}
+.cover_title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 165px 50px 140px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 100px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+.aligned-text {
+  text-align: left;
+  letter-spacing: 30px;
+}
+.aligned-text_center {
+  text-align: center;
+  padding-right: 35px;
+  padding-top: 10px;
+  letter-spacing: 30px;
+}
+.aligned-text_right {
+  text-align: right;
+  letter-spacing: 60px;
+  padding-top: 6px;
+}
+.cover__description {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-bottom: 62px;
+  z-index: 1;
+  position: relative;
+  letter-spacing: 3px;
+  margin-left: 38px;
+}
+.bet-button {
+  color: #fff;
+  position: absolute;
+  background-color: transparent;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  right: 50px;
+  bottom: 50px;
+  border: 1px solid #FFF;
+}
+.letter-spacing-extended {
+  margin-left: 30px;
+}
+.no-letter-spacing {
+  letter-spacing: 30px;
+  margin-right: -30px;
+}
+
+/*стили для секции c карточками*/
+.lots {
+  padding: 0 50px;
+  width: 100%;
+  margin-top: 181px;
+  gap: 25px;
+}
+.lots__heading {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  margin-left: 40px;
+}
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.lots__card-list-item {
+  width: 430px;
+  height: 450px;
+  background-color: grey;
+  flex-grow: 1;
+}
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 40px;
+  position: relative;
+}
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+.card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+.card__title {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.card__text {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  z-index: 1;
+}
+.lots__look-more-link {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+  margin-left: 40px;
+}
+
+/*стили для секции "об аукционе"*/
+.about {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 180px 50px 180px;
+}
+.about__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  margin: 0 95px 0 95px;
+}
+.about__logo {
+  align-self: center;
+}
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+.about__title {
+  align-self: center;
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+.about__text {
+  grid-column-start: 2;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 24px;
+  padding-top: 2px;
+}
+/*стили подвала*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: space-between;
+  margin: 0 50px 92px 50px;
+}
+.footer__menu {
+  text-align: center;
+}
+.footer__menu-list {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer__menu-list-item {
+  list-style: none;
+  line-height: 22px;
+}
+.footer__menu-list-item a{
+  text-decoration: underline;
+}
+.footer__menu-list-item a.footer__menu-link_active {
+  text-decoration: none;
+}
+.footer__social-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 48px;
+  grid-row-gap: 0px;
+  list-style: none;
+  justify-self: end;
+}
+.footer__social-list-item {
+  width: 48px;
+  height: 48px;
+}
