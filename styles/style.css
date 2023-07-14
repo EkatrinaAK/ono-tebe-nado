@@ -5,6 +5,7 @@
   margin: auto;
   background: #fff;
 }
+
 /*стили для шапки*/
 header {
   display: grid;
@@ -30,16 +31,17 @@ header {
   white-space: nowrap;
   gap: 32px;
 }
-.header__links-list-item { 
+.header__links-list-item {
   list-style: circle;
 }
-.header__links-list-item a{
+.header__links-list-item a {
   text-decoration: underline;
 }
 
 .header__links-list-item_no-bullit {
   text-decoration: none;
   list-style: none;
+  padding-left: 2px;
 }
 .header_logo {
   justify-self: center;
@@ -48,8 +50,7 @@ header {
 }
 header img {
   height: 105px;
-  width: 148px;
-  padding-bottom: 2px;
+  width: 148px;  
 }
 header address {
   justify-self: end;
@@ -100,8 +101,8 @@ header address {
 }
 .aligned-text_center {
   text-align: center;
-  padding-right: 35px;
-  padding-top: 10px;
+  padding-right: 29px;
+  padding-top: 12px;
   letter-spacing: 30px;
 }
 .aligned-text_right {
@@ -139,7 +140,7 @@ header address {
   padding: 12px 32px;
   right: 50px;
   bottom: 50px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
 }
 .letter-spacing-extended {
   margin-left: 30px;
@@ -242,7 +243,7 @@ header address {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin: 180px 50px 180px;
+  margin: 180px 50px 181px;
 }
 .about__logo-link {
   display: flex;
@@ -283,8 +284,8 @@ header address {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-left: 24px;
-  padding-top: 2px;
+  padding-left: 27px;
+  padding-top: 3px;
 }
 /*стили подвала*/
 .footer {
@@ -296,9 +297,18 @@ header address {
   justify-content: space-between;
   margin: 0 50px 92px 50px;
 }
+.footer_address {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  list-style: none;
+  line-height: 24px;
+  padding-left: 2px;
+
+}
 .footer__menu {
   text-align: center;
-}
+} 
 .footer__menu-list {
   font-size: 18px;
   font-style: normal;
@@ -308,7 +318,7 @@ header address {
   list-style: none;
   line-height: 22px;
 }
-.footer__menu-list-item a{
+.footer__menu-list-item a {
   text-decoration: underline;
 }
 .footer__menu-list-item a.footer__menu-link_active {
