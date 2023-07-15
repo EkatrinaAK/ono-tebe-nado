@@ -1,20 +1,20 @@
 /* место для вашего кода */
 
 .page {
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
   background: #fff;
 }
 
 /*стили для шапки*/
-header {
+.header {
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -48,11 +48,11 @@ header {
   width: 148px;
   height: 105px;
 }
-header img {
+.header_logo-head {
   height: 105px;
   width: 148px;
-}  
-header address {
+}
+.header_block-address {
   justify-self: end;
 }
 .header_address {
@@ -84,12 +84,12 @@ header address {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 165px 50px 140px;
+  padding: 165px 50px 128px;
   position: relative;
   z-index: 1;
   color: #fff;
   font-size: 100px;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 115%;
@@ -111,36 +111,46 @@ header address {
   padding-top: 6px;
 }
 .cover__description {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
   color: #fff;
   text-align: center;
   font-size: 22px;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
-  padding-bottom: 62px;
+  padding-bottom: 48px;
   z-index: 1;
   position: relative;
   letter-spacing: 3px;
-  margin-left: 38px;
+  margin-left: 50px;
+}
+.cover__description-text {
+  grid-column-start: 2;
+  align-self: start;
+  padding-top: 10px;
 }
 .bet-button {
   color: #fff;
-  position: absolute;
+  justify-self: end;
   background-color: transparent;
   white-space: nowrap;
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
   padding: 12px 32px;
-  right: 50px;
-  bottom: 50px;
   border: 1px solid #fff;
+  margin-right: 50px;
 }
 .letter-spacing-extended {
   margin-left: 30px;
@@ -159,7 +169,7 @@ header address {
 }
 .lots__heading {
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -174,10 +184,11 @@ header address {
   gap: 25px;
   justify-content: space-between;
   margin-bottom: 30px;
+  list-style: none;
 }
 .lots__card-list-item {
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   background-color: grey;
   flex-grow: 1;
 }
@@ -207,7 +218,7 @@ header address {
 }
 .card__title {
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -218,7 +229,7 @@ header address {
 }
 .card__text {
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -227,7 +238,7 @@ header address {
 }
 .lots__look-more-link {
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -265,18 +276,19 @@ header address {
 .about__title {
   align-self: center;
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
   margin-left: 25px;
+  padding-top: 5px;
 }
 .about__text {
   grid-column-start: 2;
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -304,11 +316,10 @@ header address {
   list-style: none;
   line-height: 24px;
   padding-left: 2px;
-
 }
 .footer__menu {
   text-align: center;
-} 
+}
 .footer__menu-list {
   font-size: 18px;
   font-style: normal;
